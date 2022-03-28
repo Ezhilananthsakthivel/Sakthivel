@@ -1,0 +1,32 @@
+{
+    "name": "Sakthivel E",
+    "phone no": "9087345799",
+    "gmail": "ezhilananthsakthi@gmail.com",
+    "educational qulification": [
+        {
+            "degree": "BE EIE",
+            "institution": "VEC",
+            "year of passing": "2017-2021",
+            "percentage": "76"
+        },
+        {
+            "degree": "HSC",
+            "institution": "RVHSS",
+            "year of passing": "2016-2017",
+            "percentage": "89"
+        },
+        {
+            "degree": "SSLC",
+            "institution": "RVHSS",
+            "year of passing": "2014-2015",
+            "percentage": "94"
+        }
+    ],
+    "personal details": {
+        "father's name": "Ezhilarasan A",
+        "dob": "22-05-1999",
+        "address": ["West Street","Thelur","Ariyalur"]
+    }
+
+
+}
