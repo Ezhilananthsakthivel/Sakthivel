@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>SAKTHIVEL E  DAY-4 TASK</head>
+<body>
+  <!-- Display all the country flags in console -->
+  <script>
+      var http = new XMLHttpRequest();
+    http.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200)
+        console.log(this.responseType);
+      var obj = JSON.parse(this.responseText);
+      let task = []
+      obj.forEach((i) => {
+        task.push(i.flags.png)
+      });
+      console.log(task);
+      task.forEach((img) => {
+        console.log('%c ',' font-size:600px; background:url(' + img + ') no-repeat;');
+      })
+    }
+    http.open("GET", "https://restcountries.com/v3.1/all");
+    http.send();
+  </script>
+  
+  <!-- Display the countries name, region, sub region and population -->
+  <script>
+  var http = new XMLHttpRequest();
+    http.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200)
+        console.log(this.responseType);
+      var obj = JSON.parse(this.responseText);
+      obj.forEach((i) => {
+        console.log("Name of Country :", i.name.common);
+        console.log("Region :", i.region);
+        console.log("SubRegion :", i.subregion);
+        console.log("Population :", i.population);
+        console.log("\n");
+      });
+    }
+    http.open("GET", "https://restcountries.com/v3.1/all");
+    http.send();
+  </script> 
+</body>
+</html>
