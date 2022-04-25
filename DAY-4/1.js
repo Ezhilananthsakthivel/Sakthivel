@@ -10,4 +10,4 @@ var isEqual = (obj1,obj2)=>{
     //return true when the two json has same length and all the properties has same value key by key
     return keys1.length === keys2.length && Object.keys(obj1).every(key=>obj1[key]==obj2[key]);
 }
-console.log("json is equals: "+ isEqual(obj1,obj2));
+console.log(isEqual(obj1,obj2));
