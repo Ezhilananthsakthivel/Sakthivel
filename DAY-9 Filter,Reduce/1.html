@@ -13,28 +13,28 @@
         if (this.readyState == 4 && this.status == 200)
           console.log(this.responseType);
         var obj = JSON.parse(this.responseText);
-      // obj.forEach(({continents,region})=> console.log(continents,region)); 
+           obj.forEach(({continents,region})=> console.log(continents,region)); 
 
-      // const a=obj.filter(({continents,region})=> continents=="Asia" && region=="Asia").map(({name}) => name);
-      // console.log(a);
+      const a=obj.filter(({continents,region})=> continents=="Asia" && region=="Asia").map(({name}) => name);
+      console.log(a);
 
-      // const a = obj.filter(({currencies})=> currencies=="USD").map(({name})=> name);
-      // console.log(a);
+      const b = obj.filter(({currencies})=> currencies=="USD").map(({name})=> name);
+      console.log(b);
 
-      // const a = obj.filter(({population})=> population<200000).map(({name}) => name);
-      // console.log(a);
+      const c = obj.filter(({population})=> population<200000).map(({name}) => name);
+      console.log(c);
 
-      // obj.forEach(con => {
-      //   console.log("countries Name:",con.name)
-      //   console.log("countries Capital:",con.capital)
-      //   console.log("countries flag:",con.flag)
-      // });
+      obj.forEach(con => {
+        console.log("countries Name:",con.name)
+        console.log("countries Capital:",con.capital)
+        console.log("countries flag:",con.flag)
+      });
 
-      // const a = obj.reduce((sum,{population}) => {
-      //   sum+=population;
-      //   return sum;
-      // },0)  
-      // console.log(a)
+      const d = obj.reduce((sum,{population}) => {
+        sum+=population;
+        return sum;
+      },0)  
+      console.log(d)
 
       }
       http.open("GET", "https://restcountries.com/v3.1/all");
