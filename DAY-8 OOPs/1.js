@@ -17,10 +17,11 @@ class Movie {
         return result;
     }
 }
-let movie1 = new Movie("Avengers", "Marvel", "PG13");
-let movie2 = new Movie("Valimai", "2D Entertainment", "PG12");
-let movie3 = new Movie("Doctor", "KJR studios", "R");
-let movie4 = new Movie("Baahubali", "Arka Media", "R");
+let movie1 = new Movie("Casino Royale", "Eon Productions", "PG13");
+let movie2 = new Movie("Avengers", "Marvel", "PG13");
+let movie3 = new Movie("Valimai", "2D Entertainment", "PG12");
+let movie4 = new Movie("Doctor", "KJR studios", "R");
+let movie5 = new Movie("Baahubali", "Arka Media", "R");
 const arr = [movie1, movie2, movie3, movie4];
 let result = movie1.getPG(arr);
 console.log(result);
@@ -61,4 +62,4 @@ class Uber {
     }
 }
 const Customer = new Uber("Ariyalur", "Trichy", 40);
-console.log("Price:",Customer.cost())
+console.log("Price:", Customer.cost())
