@@ -50,20 +50,29 @@ sumOfArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 //4.Anonynous function prime numbers
 var primeNumbers = function (a) {
-    let b = 0;
+    var b=[]
     a.forEach((num) => {
-        for (let i = 2; i < num; i++) {
-            if (num % i == 0) {
-                b++;
-            }
-        }
+        for (let i = 2; i < num; i++)
+            if (num % i == 0)
+               return false
+        b.push(num)
+        
     })
-    if (b == 0)
-        console.log(num);
-    else
-        return b;
+    console.log(b)
 }
 primeNumbers([2, 3, 4, 5, 6, 7, 8, 9, 10])
+  //IIf prime numbers
+  (function(a){
+    var b=[]
+    a.forEach((num) => {
+        for (let i = 2; i < num; i++)
+            if (num % i == 0)
+               return false
+        b.push(num)
+        
+    })
+    console.log(b)
+   })([2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 
 //5.Anonynous function palindromeNumber
@@ -237,23 +246,20 @@ sumOfArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 //4.prime numbers
 var primeNumbers = (a) => {
-    let b = 0;
+    var b=[]
     a.forEach((num) => {
-        for (let i = 2; i < num; i++) {
-            if (num % i == 0) {
-                b++;
-            }
-        }
+        for (let i = 2; i < num; i++)
+            if (num % i == 0)
+               return false
+        b.push(num)
+        
     })
-    if (b == 0)
-        console.log(num);
-    else
-        return b;
+    console.log(b)
 }
 primeNumbers([2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 //5.palindromeNumber
-var palindromeNumber = function (a) {
+var palindromeNumber = (a) => {
     var d = [];
     a.forEach((str) => {
         let b = str;
@@ -266,11 +272,3 @@ var palindromeNumber = function (a) {
     console.log(d);
 }
 palindromeNumber(['level', 'did', '121', 'sakthi', 'vel', '123321'])
-
-
-
-
-
-
-
-
